@@ -1,0 +1,157 @@
+@media screen and(max-width: 767px) {
+
+
+  .menu {
+    display: none;
+  }
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: block;
+  position: relative;
+  color: var(--primary-text-color-dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+
+  }
+}
+
+
+.menu__link--current {
+  color: var(--accent-color);
+
+  &::after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: -32px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+}
+
+
+// @media screen and (min-width:768px) {
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--secondary-text-color-dark);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+//  }
+
+.contacts__phone-namber {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--secondary-text-color-dark);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__item {
+  margin-right: 50px;
+}
+
+.contacts {
+  @media screen and(max-width: 1200px) {
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+  }
+}
+
+.contacts {
+  display: flex;
+  padding-top: 0;
+
+
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and(max-width: 1199px) {}
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.contacts__item:hover .contacts__icon,
+.contacts__item:focus .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and(min-width:768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu__item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
