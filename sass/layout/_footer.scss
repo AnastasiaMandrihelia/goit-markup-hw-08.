@@ -1,0 +1,249 @@
+.footer-page {
+    @media screen and(min-width: 1200px) {
+
+
+        align-items: baseline;
+        display: flex;
+    }
+
+    @media screen and(max-width: 1199px) {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 60px;
+        text-align: center;
+    }
+
+
+    @media screen and(max-width: 767px) {
+        text-align: center;
+        align-items: center;
+
+    }
+
+}
+
+
+.page-footer {
+    margin-top: 20px;
+
+
+    // @media screen and(max-width: 767px) {
+    //     text-align: center;
+    //     align-items: center;
+    //     width: 450px;
+
+    // }
+}
+
+.footer-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color-light);
+}
+
+.footer-link-mail {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background: #2f303a;
+}
+
+.footer-address {
+    display: block;
+    align-items: baseline;
+    flex-grow: 1;
+
+    // @media screen and(max-width: 767px) {
+    //     text-align: center;
+    //     justify-content: space-around
+    // }
+
+    @media screen and(max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+}
+
+.join {
+    margin-left: 70px;
+
+    // @media screen and(max-width: 1199px) {
+    //     margin-left: 0px;
+    // }
+}
+
+.join-us {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    // @media screen and(max-width: 767px) {
+    //     margin-top: 60px;
+    //     text-align: center;
+    //     margin-bottom: 20px;
+    // }
+
+    // @media screen and(max-width: 1199px) {
+    //     text-align: center;
+
+    // }
+
+}
+
+
+.join-item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.join-link {
+    @extend %align;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.join-icon {
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.form-subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+    align-items: center;
+
+
+
+}
+
+
+
+
+.subscribe {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    @media screen and(max-width: 1199px) {
+        text-align: center;
+    }
+
+
+}
+
+.subscribe-input {
+
+
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+
+    &:focus {
+        outline: none;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 450px;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
+}
+
+
+
+
+.subscribe-submit {
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    padding-left: 28px;
+    color: #ffffff;
+
+    @media screen and(max-width:1199px) {
+        margin-top: 20px;
+
+
+    }
+
+
+}
+
+.submit-icon {
+    align-self: center;
+    fill: #ffffff;
+    margin-left: 10px;
+}
