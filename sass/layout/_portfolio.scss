@@ -55,14 +55,15 @@
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
-    padding-bottom: 63px;
-    padding-top: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 24px;
     padding-right: 24px;
     background-color: rgba(33, 150, 243, 0.9);
     color: #ffffff;
 
-    display: block;
+    // display: block;
     position: absolute;
     left: 0;
     top: 0;
@@ -102,13 +103,15 @@
     //     flex-basis: calc((100% - 60px) / 3);
     // }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1199px) {
         flex-basis: calc((100% - 30px) /2);
+
+
 
     }
 
     @media screen and (min-width: 1200px) {
-        flex-basis: calc(100% / 3 - 30px);
+        flex-basis: calc((100% - 60px) / 3);
     }
 }
 

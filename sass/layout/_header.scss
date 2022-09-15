@@ -12,10 +12,7 @@
   justify-content: space-between;
 }
 
-// .page-header {
-//   padding-top: 16px;
-//   padding-bottom: 16px;
-// }
+
 
 .page-header__container {
   display: flex;
@@ -93,9 +90,10 @@
   }
 }
 
-.contacts__item {
-  margin-right: 50px;
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
 }
+
 
 .contacts {
   @media screen and(max-width: 1200px) {
@@ -107,7 +105,7 @@
 }
 
 .contacts {
-  display: flex;
+  margin-left: auto;
   padding-top: 0;
 
 
@@ -115,7 +113,12 @@
     display: none;
   }
 
-  @media screen and(max-width: 1199px) {}
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+
+  }
 }
 
 .contacts__icon {
