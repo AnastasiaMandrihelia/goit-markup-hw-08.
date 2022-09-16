@@ -24,6 +24,7 @@
   justify-content: space-between;
   position: relative;
 }
+
 .work__subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -31,8 +32,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #ffffff;
 }
 
