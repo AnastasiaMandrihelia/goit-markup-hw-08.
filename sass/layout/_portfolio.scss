@@ -118,9 +118,12 @@
 }
 
 .image-link {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    // display: block;
+    // max-width: 100%;
+    // height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background 250ms cubic-bezier(0.4, 0, 0.2, 1);

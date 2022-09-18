@@ -9,7 +9,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-right: 40px;
-  padding-left: 80px;
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,8 +63,8 @@
 }
 
 .mobile-menu__box {
-  position: relative;
-  padding-left: 25px;
+
+
   display: flex;
   flex-direction: column;
   // height: 100%;
@@ -92,16 +92,20 @@
 
 .mobile-menu__item {
   margin-top: 32px;
-  width: 192px;
-  height: 48px;
-  left: 40px;
-  top: 212px;
-
+  // width: 192px;
+  // height: 48px;
+  // left: 40px;
+  // top: 212px;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: #212121;
+}
+
+.mob-menu__contact {
+  margin-bottom: 64px;
 }
 
 .mobile-menu__link {
