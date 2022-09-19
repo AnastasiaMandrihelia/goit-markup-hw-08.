@@ -80,10 +80,7 @@
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
 
-    @media screen and (min-width: 768px) {
 
-        margin-bottom: 0;
-    }
 
     @media screen and (min-width: 1200px) {
         width: 270px;
@@ -98,6 +95,7 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
         // margin-right: 30px;
+        margin-bottom: 0;
 
 
     }
