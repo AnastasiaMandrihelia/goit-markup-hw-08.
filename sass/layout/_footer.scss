@@ -1,7 +1,7 @@
 .footer-page {
     @media screen and(min-width: 1200px) {
 
-
+        text-align: left;
         align-items: baseline;
         display: flex;
     }
@@ -136,6 +136,9 @@
 
 }
 
+.subscribe-us {
+    margin-top: 20px;
+}
 
 .join-item {
     display: flex;
@@ -181,6 +184,8 @@
     // 
     @media screen and(min-width: 1200px) {
         margin-left: auto;
+        margin-top: 0;
+        align-items: flex-start;
     }
 
 
@@ -201,13 +206,14 @@
 
     @media screen and(max-width: 1199px) {
         text-align: center;
+        margin-bottom: 20px;
 
 
     }
 
-    @media screen and(min-width: 1200px) {
-        margin-right: auto;
-    }
+    // @media screen and(min-width: 1200px) {
+    //     margin-right: auto;
+    // }
 
 
 }
@@ -224,13 +230,15 @@
     border-radius: 4px;
     background-color: #2f303a;
 
+
     &:focus {
         outline: none;
     }
 
     @media screen and (min-width:768px) {
         width: 450px;
-        margin-top: 20px;
+
+
     }
 
     @media screen and (min-width:1200px) {
@@ -256,19 +264,20 @@
     display: inline-flex;
     align-items: center;
     letter-spacing: 0.06em;
-    padding-left: 28px;
+    justify-content: center;
+    // padding-left: 28px;
     cursor: pointer;
     color: #ffffff;
 
     @media screen and(max-width: 1199px) {
-        margin: 0;
+        margin: 20px auto 0;
 
         display: flex;
         flex-direction: row;
         // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-left: 150px;
+
 
         margin-top: 20px;
     }
