@@ -944,6 +944,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-text-color-light);
 }
 .footer-link:hover, .footer-link:focus {
@@ -955,6 +956,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link-mail:hover, .footer-link-mail:focus {
@@ -967,6 +969,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link-tel:hover, .footer-link-tel:focus {
   color: var(--accent-color);
@@ -991,21 +994,11 @@ body {
     text-align: left;
   }
 }
-@media screen and (max-width: 767px) {
-  .footer-addres {
-    margin-bottom: 60px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .join {
     margin-left: 70px;
     margin-right: 93px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .join {
-    margin-bottom: 60px;
   }
 }
 
@@ -1186,7 +1179,7 @@ body {
   margin-left: 8px;
 }
 
-.btn-inventory--current {
+.btn--current {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background: #2196f3;
   color: var(--primary-text-color-light);
